@@ -8,6 +8,7 @@ const foodSchema = new mongoose.Schema({
   protein: Number,
   carbs: Number,
   fats: Number,
+  suggestions: [String],
 }, { timestamps: true });
 
 export default mongoose.model("Food", foodSchema);
